@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Dev Finder</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="shortcut icon" href="./assets/user/octocat.svg" type="image/x-icon">
+</head>
+<body class="overflow-x-hidden w-[100wv] relative font-poppins dark:bg-da-body bg-li-body dark:text-da-text-light-gray text-li-text-light-gray/80 flex flex-col items-center gap-6 justify-center py-12">
+    <div class="z-40 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% blur-[255px] bottom-0 left-0 rotate-[-45deg] absolute w-[200px] h-[100px] sm:w-[300px] sm:h-[200px] rounded-full "></div>
+    <div class="z-40 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% blur-[400px] top-0 right-0 rotate-[-45deg] absolute w-[200px] h-[400px] sm:w-[300px] sm:h-[600px] rounded-full "></div>
+    <main class="z-50 min-w-[320px] max-w-[360px] sm:max-w-[600px] sm:min-w-[550px] lg:min-w-[800px] flex flex-col gap-4">
+        <div>
+            <div class="flex justify-between items-center">
+                <h1 class="font-poppins text-li-text-color dark:text-da-text-color-dark text-2xl font-semibold">Devfinder</h1>
+                <button class="group" onclick="toggleDarkMode()">
+                    <abbr class="hidden dark:block" title="light Mode">
+                        <svg width="22" height="22" class="dark:text-da-text-color-dark dark:group-hover:text-da-icon text-li-text-light-gray   group-hover:text-li-text-color" fill="currentColor" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_341_2856)">
+                                <path d="M11 3.36016C11.356 3.36016 11.6445 3.07158 11.6445 2.71563V0.644531C11.6445 0.288578 11.356 0 11 0C10.644 0 10.3555 0.288578 10.3555 0.644531V2.71563C10.3555 3.07158 10.644 3.36016 11 3.36016ZM4.68639 5.59788C4.9381 5.84959 5.34617 5.84959 5.59788 5.59788C5.84959 5.34617 5.84959 4.9381 5.59788 4.68639L4.13342 3.22188C3.88171 2.97017 3.47364 2.97017 3.22193 3.22188C2.97021 3.47359 2.97021 3.88167 3.22193 4.13338L4.68639 5.59788ZM4.68613 16.4024L3.22167 17.8668C2.96996 18.1185 2.96996 18.5266 3.22167 18.7783C3.47338 19.03 3.88145 19.03 4.13316 18.7783L5.59767 17.3138C5.84938 17.0621 5.84938 16.654 5.59767 16.4023C5.34596 16.1506 4.93784 16.1507 4.68613 16.4024ZM11 18.6398C10.644 18.6398 10.3555 18.9284 10.3555 19.2844V21.3555C10.3555 21.7114 10.644 22 11 22C11.356 22 11.6445 21.7114 11.6445 21.3555V19.2844C11.6445 18.9284 11.356 18.6398 11 18.6398ZM3.36016 11C3.36016 10.644 3.07158 10.3555 2.71563 10.3555H0.644531C0.288578 10.3555 0 10.644 0 11C0 11.356 0.288578 11.6445 0.644531 11.6445H2.71563C3.07158 11.6445 3.36016 11.356 3.36016 11ZM11 5.5229C7.97994 5.5229 5.5229 7.97994 5.5229 11C5.5229 14.0201 7.97994 16.4771 11 16.4771C14.0201 16.4771 16.4771 14.0201 16.4771 11C16.4771 7.97994 14.0201 5.5229 11 5.5229ZM17.3139 5.59763L18.7784 4.13312C19.0301 3.88141 19.0301 3.47334 18.7784 3.22162C18.5267 2.96991 18.1186 2.96991 17.8669 3.22162L16.4024 4.68613C16.1507 4.93784 16.1507 5.34591 16.4024 5.59763C16.6541 5.84934 17.0622 5.84934 17.3139 5.59763ZM17.3136 16.4021C17.0619 16.1504 16.6538 16.1504 16.4021 16.4021C16.1504 16.6538 16.1504 17.0619 16.4021 17.3136L17.8666 18.7781C18.1183 19.0298 18.5264 19.0298 18.7781 18.7781C19.0298 18.5264 19.0298 18.1183 18.7781 17.8666L17.3136 16.4021ZM21.3555 10.3555H19.2844C18.9284 10.3555 18.6398 10.644 18.6398 11C18.6398 11.356 18.9284 11.6445 19.2844 11.6445H21.3555C21.7114 11.6445 22 11.356 22 11C22 10.644 21.7114 10.3555 21.3555 10.3555Z"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_341_2856">
+                                    <rect width="22" height="22" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </abbr>
+                    <abbr class="dark:hidden block" title="Dark Mode">
+                        <svg width="22" height="22" class="dark:text-da-text-color-dark dark:group-hover:text-da-icon text-li-text-light-gray   group-hover:text-li-text-color" fill="currentColor"  viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_341_2860)">
+                                <path d="M21.1104 13.558C21.0184 13.4662 20.9023 13.4024 20.7755 13.3739C20.6487 13.3454 20.5164 13.3535 20.394 13.3971C18.7491 13.9836 16.9715 14.0913 15.2678 13.7077C13.564 13.324 12.0041 12.4649 10.7693 11.23C9.53446 9.99504 8.67538 8.4351 8.29186 6.73135C7.90834 5.02761 8.01613 3.25002 8.60271 1.6051C8.6463 1.48267 8.65429 1.3504 8.62577 1.22361C8.59725 1.09683 8.53337 0.980721 8.44155 0.888757C8.34973 0.796793 8.23373 0.732736 8.10699 0.704014C7.98024 0.675292 7.84796 0.683079 7.72546 0.726474C6.24245 1.25017 4.89663 2.10156 3.78815 3.21729C1.80101 5.20593 0.685016 7.90235 0.685547 10.7136C0.686079 13.5249 1.8031 16.2209 3.79098 18.2088C5.77887 20.1967 8.47487 21.3137 11.2862 21.3143C14.0975 21.3148 16.7939 20.1988 18.7825 18.2117C19.8983 17.103 20.7497 15.7569 21.2733 14.2737C21.3166 14.1512 21.3242 14.0189 21.2954 13.8923C21.2665 13.7656 21.2024 13.6497 21.1104 13.558Z"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_341_2860">
+                                    <rect width="22" height="22" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </abbr>
+                </button>
+            </div>
+        </div>
+        <div class="flex flex-col gap-6">
+            <div tabindex="0" class="dark:bg-da-container bg-li-container  focus:border-[.0002px] focus:border-li-text-color-gray/10 focus:dark:border-da-text-color-dark/5 shadow-md dark:shadow-assent-color/5 hover:shadow-none   flex gap-2 justify-between items-center h-14 py-2 px-1 rounded-lg">
+                <div class="flex gap-2 flex-1 ps-1">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.9472 15.9698C17.6543 15.6769 17.1795 15.6769 16.8866 15.9698C16.5937 16.2627 16.5937 16.7376 16.8866 17.0305L17.9472 15.9698ZM20.5531 20.6971C20.846 20.99 21.3209 20.99 21.6138 20.6971C21.9067 20.4042 21.9067 19.9294 21.6138 19.6365L20.5531 20.6971ZM8.56713 4.46394C8.97625 4.39914 9.25537 4.01496 9.19057 3.60585C9.12578 3.19673 8.74159 2.91761 8.33248 2.98241L8.56713 4.46394ZM3.89913 7.41576C3.83433 7.82487 4.11345 8.20905 4.52257 8.27385C4.93168 8.33865 5.31586 8.05953 5.38066 7.65041L3.89913 7.41576ZM16.8866 17.0305L20.5531 20.6971L21.6138 19.6365L17.9472 15.9698L16.8866 17.0305ZM10.0835 16.6667C5.94136 16.6667 2.5835 13.3089 2.5835 9.16675H1.0835C1.0835 14.1373 5.11293 18.1667 10.0835 18.1667V16.6667ZM17.5835 9.16675C17.5835 13.3089 14.2256 16.6667 10.0835 16.6667V18.1667C15.0541 18.1667 19.0835 14.1373 19.0835 9.16675H17.5835ZM10.0835 1.66675C14.2256 1.66675 17.5835 5.02461 17.5835 9.16675H19.0835C19.0835 4.19619 15.0541 0.166748 10.0835 0.166748V1.66675ZM10.0835 0.166748C5.11293 0.166748 1.0835 4.19619 1.0835 9.16675H2.5835C2.5835 5.02461 5.94136 1.66675 10.0835 1.66675V0.166748ZM8.33248 2.98241C6.05039 3.34385 4.26057 5.13367 3.89913 7.41576L5.38066 7.65041C5.64045 6.01016 6.92688 4.72373 8.56713 4.46394L8.33248 2.98241Z" fill="#0179F9"/>
+                    </svg>
+                    <input autocomplete="off" class="w-full bg-transparent outline-0 placeholder:text-li-text-very-light-gray dark:placeholder:text-da-text-light-gray  text-li-text-light-gray dark:text-da-text-light-gray" type="text" id="input-username" placeholder="Search GitHub Username...">
+                </div>
+                <button id="search" class="font-poppins bg-assent-color shadow-lg  hover:shadow-assent-color/0 shadow-assent-color/50 py-3 px-6 text-white font-WorkSans font-normal rounded-md">Search</button>
+            </div>
+            <div id="loader" class="h-[150px] bg-li-container shadow-lg dark:shadow-assent-color/5 hover:shadow-none dark:bg-da-container rounded-lg flex items-center justify-center "><div class="loader"></div></div>
+            <div id="content" class="hidden bg-li-container shadow-lg dark:shadow-assent-color/5 hover:shadow-none dark:bg-da-container px-6 sm:px-10 py-4 sm:py-8 rounded-lg  flex-col gap-6 s">
+                <div class="grid grid-cols-[100px_repeat(2,_minmax(0,_1fr))] gap-6 sm:gap-6 ">
+                    <img id="avater" class="lg:row-span-4 border-[2px] dark:border-da-text-color-dark border-li-text-color/50 rounded-full min-w-[100px] min-h-[100px] max-w-[100px]  max-h-[100px] " src="./assets/user/octocat.svg" alt="avater">
+                    <div class="col-span-2  flex flex-col lg:flex-row lg:justify-between flex-1 gap-2">
+                        <div class="flex flex-col">
+                            <p id="name" class="font-poppins text-li-text-color dark:text-da-text-color-dark font-medium text-2xl"></p>
+                            <a class="text-assent-color" id="username" href=""></a>
+                        </div>
+                        <div class="flex gap-2 text-center items-center">
+                            <div class="min-w-[10px] min-h-[10px] bg-assent-color shadow shadow-assent-color rounded-full"></div>
+                            <p id="join-date" class="hover:text-li-text-color/90 dark:hover:text-da-text-color-dark/85 text-nowrap"></p>
+                        </div>
+                    </div>
+                    <p class="col-span-3 lg:col-span-2 sm:pe-14" id="bio"></p>
+                    <div class="col-span-3 lg:col-span-2 flex bg-li-body dark:bg-da-body px-4 sm:px-6 py-4 items-center justify-center sm:justify-start sm:gap-24 lg:gap-32 gap-6 text-center sm:text-start rounded-md">
+                        <div>
+                            <p>Repos</p>
+                            <p id="repos" class="text-li-text-color dark:text-da-text-color-dark text-base font-medium "></p>
+                        </div>
+                        <div>
+                            <p>Followers</p>
+                            <p id="followers" class="text-li-text-color dark:text-da-text-color-dark text-base font-medium "></p>
+                        </div>
+                        <div>
+                            <p>Following</p>
+                            <p id="following" class="text-li-text-color dark:text-da-text-color-dark text-base font-medium "></p>
+                        </div>
+                    </div>
+                    <div class="col-span-2 flex flex-col sm:flex-row justify-between gap-4 sm:gap-28">
+                        <div class="flex flex-col gap-4 flex-1">
+                            <div class="min-w-40 flex gap-2 text-nowrap text-center">
+                                <div class="group">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" class="dark:text-da-text-color-dark dark:group-hover:text-da-icon text-li-text-light-gray   group-hover:text-li-text-color"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 0C6.6067 0 3.03247 3.57423 3.03247 7.96752C3.03247 13.4197 10.1627 21.4239 10.4662 21.762C10.7514 22.0796 11.2492 22.079 11.5338 21.762C11.8374 21.4239 18.9676 13.4197 18.9676 7.96752C18.9675 3.57423 15.3933 0 11 0ZM11 11.9762C8.78964 11.9762 6.9914 10.1779 6.9914 7.96752C6.9914 5.75712 8.78968 3.95888 11 3.95888C13.2104 3.95888 15.0086 5.75717 15.0086 7.96757C15.0086 10.178 13.2104 11.9762 11 11.9762Z" />
+                                    </svg>
+                            
+                                </div>
+                                <p id="location" class="hover:text-li-text-color/90 dark:hover:text-da-text-color-dark/85"></p>
+                            </div>
+                            <div class="flex gap-3 items-center min-w-40 ">
+                                <div class="group">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" class="dark:text-da-text-color-dark dark:group-hover:text-da-icon text-li-text-light-gray   group-hover:text-li-text-color" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_142_14)">
+                                        <path d="M13.4233 8.57511C13.1627 8.31296 12.8738 8.08057 12.5618 7.88223C11.7356 7.35318 10.7751 7.07201 9.79399 7.07203C9.11979 7.07077 8.45201 7.20294 7.82912 7.46091C7.20623 7.71887 6.64054 8.09755 6.16464 8.57511L1.50148 13.2419C0.541897 14.2033 0.00257856 15.506 0.00171005 16.8643C-9.43163e-05 19.6989 2.29626 21.9982 5.13083 22C5.80398 22.0023 6.47094 21.8714 7.09323 21.6146C7.71551 21.3579 8.28081 20.9805 8.75652 20.5043L12.6058 16.655C12.6575 16.6037 12.6928 16.5382 12.7071 16.4668C12.7214 16.3954 12.7141 16.3213 12.6862 16.2541C12.6583 16.1869 12.611 16.1294 12.5503 16.0892C12.4896 16.0489 12.4183 16.0277 12.3455 16.0281H12.1989C11.3947 16.0309 10.5977 15.8765 9.85267 15.5735C9.78557 15.5459 9.71178 15.5388 9.64064 15.5532C9.56951 15.5675 9.50424 15.6027 9.45309 15.6541L6.68524 18.4256C5.82577 19.2851 4.43228 19.2851 3.5728 18.4256C2.71332 17.5662 2.71332 16.1727 3.5728 15.3132L8.25431 10.6354C9.1131 9.77767 10.5043 9.77767 11.3631 10.6354C11.9419 11.1801 12.8447 11.1801 13.4234 10.6354C13.6724 10.3862 13.8234 10.0556 13.8487 9.70421C13.8619 9.49661 13.8308 9.28856 13.7575 9.09389C13.6842 8.89922 13.5703 8.72238 13.4233 8.57511Z"/>
+                                        <path d="M20.4951 1.50357C18.4906 -0.500864 15.2408 -0.500864 13.2364 1.50357L9.39073 5.34553C9.33912 5.39739 9.30421 5.46351 9.29049 5.53538C9.27677 5.60725 9.28487 5.68158 9.31374 5.74881C9.34228 5.81623 9.39035 5.87356 9.45177 5.91342C9.51319 5.95327 9.58513 5.97382 9.65833 5.97242H9.79396C10.5972 5.97094 11.393 6.12662 12.1365 6.43068C12.2036 6.4583 12.2774 6.46538 12.3486 6.45103C12.4197 6.43667 12.485 6.40153 12.5361 6.35005L15.2966 3.59319C16.1561 2.73371 17.5496 2.73371 18.4091 3.59319C19.2685 4.45267 19.2685 5.84616 18.4091 6.70563L14.9703 10.1407L14.941 10.1737L13.7386 11.3688C12.8798 12.2265 11.4886 12.2265 10.6298 11.3688C10.051 10.8241 9.14821 10.8241 8.56949 11.3688C8.31889 11.6199 8.16781 11.9533 8.14421 12.3073C8.13096 12.5149 8.16203 12.7229 8.23535 12.9176C8.30867 13.1123 8.42257 13.2891 8.56949 13.4364C8.99379 13.8625 9.49027 14.2101 10.0359 14.4629C10.1129 14.4995 10.1898 14.5289 10.2668 14.5619C10.3438 14.5949 10.4245 14.6205 10.5014 14.6499C10.5785 14.6788 10.6568 14.7045 10.7361 14.7268L10.9524 14.7855C11.099 14.8221 11.2457 14.8515 11.3959 14.8771C11.577 14.904 11.7593 14.9212 11.9422 14.9285H12.2208L12.4407 14.9028C12.5214 14.8992 12.6057 14.8808 12.701 14.8808H12.8257L13.0786 14.8442L13.196 14.8222L13.4086 14.7782H13.4489C14.3494 14.552 15.1717 14.0857 15.8281 13.4291L20.495 8.76226C22.4995 6.75783 22.4995 3.508 20.4951 1.50357Z"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_142_14">
+                                        <rect width="22" height="22" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                            
+                                </div>
+                                <a id="link" class="hover:text-li-text-color/90 dark:hover:text-da-text-color-dark/85" href=""></a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 flex-1">
+                            <div class="flex gap-2 min-w-40">
+                                <div class="group">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" class="dark:text-da-text-color-dark dark:group-hover:text-da-icon text-li-text-light-gray   group-hover:text-li-text-color" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_142_19)">
+                                        <path d="M22 4.17863C21.1819 4.5375 20.3101 4.77537 19.4012 4.89087C20.3362 4.33262 21.0499 3.45537 21.3854 2.398C20.5136 2.91775 19.5511 3.28488 18.5254 3.48975C17.6976 2.60838 16.5179 2.0625 15.2309 2.0625C12.7339 2.0625 10.7236 4.08925 10.7236 6.57388C10.7236 6.93138 10.7539 7.27512 10.8281 7.60237C7.0785 7.4195 3.76063 5.62238 1.53175 2.88475C1.14262 3.55988 0.914375 4.33263 0.914375 5.1645C0.914375 6.7265 1.71875 8.11112 2.91775 8.91275C2.19312 8.899 1.48225 8.68863 0.88 8.35725V8.40675C0.88 10.5985 2.44337 12.419 4.4935 12.8384C4.12637 12.9387 3.72625 12.9869 3.311 12.9869C3.02225 12.9869 2.73075 12.9704 2.45712 12.9099C3.0415 14.696 4.69975 16.0091 6.6715 16.0517C5.137 17.2521 3.18863 17.9754 1.07938 17.9754C0.7095 17.9754 0.35475 17.9589 0 17.9135C1.99787 19.2019 4.36563 19.9375 6.919 19.9375C15.2185 19.9375 19.756 13.0625 19.756 7.10325C19.756 6.90387 19.7491 6.71138 19.7395 6.52025C20.6346 5.885 21.3867 5.09163 22 4.17863Z"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_142_19">
+                                        <rect width="22" height="22" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <p id="twitter" class="text-nowrap hover:text-li-text-color/90 dark:hover:text-da-text-color-dark/85"></p>
+                            </div>
+                            <div class="flex gap-2 min-w-40">
+                                <div class="group">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" class="dark:text-da-text-color-dark dark:group-hover:text-da-icon text-li-text-light-gray   group-hover:text-li-text-color"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3832 2.75C12.5642 2.75217 12.7369 2.82556 12.8641 2.95426C12.9912 3.08295 13.0625 3.25658 13.0625 3.4375V18.5625C13.0625 18.7433 12.9913 18.9168 12.8643 19.0455C12.7373 19.1742 12.5647 19.2476 12.3839 19.25H4.8125C4.63016 19.25 4.4553 19.1776 4.32636 19.0486C4.19743 18.9197 4.125 18.7448 4.125 18.5625V7.15069C4.12492 6.72723 4.25519 6.31401 4.49812 5.96715C4.74104 5.6203 5.08484 5.35662 5.48281 5.21194L12.1399 2.79125C12.2128 2.76512 12.2877 2.75138 12.3626 2.75H12.3729H12.3832ZM14.4375 8.38612L16.6251 9.32319C16.9961 9.48231 17.3123 9.74677 17.5344 10.0838C17.7566 10.4208 17.875 10.8156 17.875 11.2193V18.5625C17.875 18.7448 17.8026 18.9197 17.6736 19.0486C17.5447 19.1776 17.3698 19.25 17.1875 19.25H14.3199C14.3963 19.0348 14.4375 18.8038 14.4375 18.5625V8.38612ZM9.63394 14.4375C9.72422 14.4369 9.81351 14.4185 9.89669 14.3835C9.97988 14.3484 10.0553 14.2972 10.1188 14.233C10.1822 14.1687 10.2323 14.0926 10.2663 14.009C10.3004 13.9253 10.3176 13.8358 10.317 13.7455C10.3164 13.6552 10.298 13.566 10.2629 13.4828C10.2278 13.3996 10.1767 13.3241 10.1124 13.2607C10.0482 13.1973 9.97207 13.1471 9.88843 13.1131C9.8048 13.0791 9.71528 13.0619 9.625 13.0625H7.5625C7.38016 13.0625 7.2053 13.1349 7.07636 13.2639C6.94743 13.3928 6.875 13.5677 6.875 13.75C6.875 13.9323 6.94743 14.1072 7.07636 14.2361C7.2053 14.3651 7.38016 14.4375 7.5625 14.4375H9.625H9.63394ZM9.63394 11.6875C9.81627 11.6863 9.99067 11.6127 10.1188 11.483C10.2469 11.3532 10.3182 11.1779 10.317 10.9955C10.3158 10.8132 10.2422 10.6388 10.1124 10.5107C9.98268 10.3826 9.80734 10.3113 9.625 10.3125H7.5625C7.38016 10.3125 7.2053 10.3849 7.07636 10.5139C6.94743 10.6428 6.875 10.8177 6.875 11C6.875 11.1823 6.94743 11.3572 7.07636 11.4861C7.2053 11.6151 7.38016 11.6875 7.5625 11.6875H9.625H9.63394ZM9.63394 8.9375C9.81627 8.93631 9.99067 8.86275 10.1188 8.73298C10.2469 8.60321 10.3182 8.42787 10.317 8.24553C10.3158 8.06319 10.2422 7.8888 10.1124 7.7607C9.98268 7.63261 9.80734 7.56131 9.625 7.5625H7.5625C7.38016 7.5625 7.2053 7.63493 7.07636 7.76386C6.94743 7.8928 6.875 8.06766 6.875 8.25C6.875 8.43234 6.94743 8.6072 7.07636 8.73614C7.2053 8.86507 7.38016 8.9375 7.5625 8.9375H9.625H9.63394Z"/>
+                                    </svg>
+                            
+                                </div>
+                                <p id="company" class="hover:text-li-text-color/90 dark:hover:text-da-text-color-dark/85"></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="text-sm">Copyright © 2025 <a class="hover:text-li-text-color/90 dark:hover:text-da-text-color-dark/85 break-all" href="https://www.linkedin.com/in/eyu-birhanu/">Eyu Birhanu.</a></p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+        }
+    </script>
+</body>
+</html>
