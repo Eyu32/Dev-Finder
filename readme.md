@@ -12,7 +12,7 @@ Dev Finder is a simple web application that allows users to search for GitHub pr
 
 ## Live Demo
 
-[Live Demo](#) (Add your deployed link here)
+[Live Demo](https://eyu32.github.io/Dev-Finder/)
 
 ## Technologies Used
 
